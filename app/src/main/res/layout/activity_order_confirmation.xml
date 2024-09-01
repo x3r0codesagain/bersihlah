@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderConfirmation"
+    android:background="#66D5ED">
+
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Order Confirmation"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/orderCatTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Order Category: "
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/orderCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Something"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/orderAddressTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Address: "
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/orderAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Something"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/orderDurationTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Duration: "
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/orderDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Something"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/orderDateTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Date: "
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/orderDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Something"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/orderPaymentTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Payment Method: "
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/orderPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Something"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:textSize="14sp"/>
+
+                <Button
+                    android:layout_marginTop="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/rounded_edges"
+                    android:textStyle="normal"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Payment Status: Unpaid"
+                    android:padding="10dp"
+                    />
+
+                <Button
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/cancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cancel"
+                    android:background="@drawable/rounded_edges1"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/backHomeButton"
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Home"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

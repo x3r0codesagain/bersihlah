@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderList"
+    android:background="#66D5ED">
+
+    <ImageView
+        android:id="@+id/orderListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/orderlistheader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="437dp"
+        android:layout_margin="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderListHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="437dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/orderListRV"
+                android:layout_width="match_parent"
+                android:layout_height="437dp"
+                android:layout_marginTop="20dp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edges_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/orderListHome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/home111" />
+
+        <ImageView
+            android:id="@+id/orderListArticle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/group_17" />
+
+        <ImageView
+            android:id="@+id/orderListOrderList"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/highlightbasket" />
+
+        <ImageView
+            android:id="@+id/orderListFaq"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/group_28" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

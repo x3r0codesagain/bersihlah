@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1049245669326",
+    "project_id": "bersihlah-15816",
+    "storage_bucket": "bersihlah-15816.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049245669326:android:b4332377e7c44bcf29fd9f",
+        "android_client_info": {
+          "package_name": "com.myapp.bersihlah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049245669326-9f39mq0354f9kdknd45g9c4n9ood50i6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_uiZ4bWtlQ-WsjQSDZG2k1lSMWWBcFsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049245669326-9f39mq0354f9kdknd45g9c4n9ood50i6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

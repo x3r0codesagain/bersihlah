@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:layout_marginStart="16dp"
+    android:layout_margin="20dp"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:padding="22dp"
+        android:background="@drawable/rounded_edges_white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Order Category"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/orderHistoryCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Category"
+                android:fontFamily="@font/poppins"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Order Date:"
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="left"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/orderHistoryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Date"
+                android:fontFamily="@font/poppins"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="18sp"
+                android:text="Order Price:"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/orderHistoryPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Date"
+                android:fontFamily="@font/poppins"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="left"
+                android:text="Order Status:"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/orderHistoryStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Date"
+                android:fontFamily="@font/poppins"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
